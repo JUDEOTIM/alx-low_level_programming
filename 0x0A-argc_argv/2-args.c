@@ -1,22 +1,16 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * _strchr - locate character in a string
- * @s: char array string
- * @c: char to find
- * Return: NULL if char not found, or the pointer if found
+ * main - prints all arguments it receives.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
-
-char *_strchr(char *s, char c)
+int main(int argc, char *argv[])
 {
-	while (*s != '\0')
-	{
-		s++;
-		if (*s == c)
-			return (s);
-		else if (*(s + 1) == c)
-			return (s + 1);
-	}
-	return (s + 1);
+int i;
+
+for (i = 0; i < argc; i++)
+printf("%s\n", argv[i]);
+return (0);
 }
