@@ -9,7 +9,7 @@ int main(void)
 {
 int i;
 
-irntf("Infinite loop incoming :(\n");
+pirntf("Infinite loop incoming :(\n");
 
 i = 0;
 /*
